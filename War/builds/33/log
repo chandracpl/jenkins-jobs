@@ -1,0 +1,561 @@
+Started by user [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/War
+using credential 9b7eeebf-2fe3-4788-a4ab-432188ca4fe6
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/chandracpl/Sample-War.git # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/Sample-War.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/Sample-War.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision f029a64f3319b80af4b01ad2e4ea3d2696630ac5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f f029a64f3319b80af4b01ad2e4ea3d2696630ac5 # timeout=10
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk f029a64f3319b80af4b01ad2e4ea3d2696630ac5 # timeout=10
+[War] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/3.6.3/bin/mvn clean package
+[INFO] Scanning for projects...
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.example.maven-project:server:jar:1.0-SNAPSHOT
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.example.maven-project:webapp:war:1.0-SNAPSHOT
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.example.maven-project:maven-project:pom:1.0-SNAPSHOT
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 51, column 24
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] The project com.example.maven-project:maven-project:pom:1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Maven Project                                                      [pom]
+[INFO] Server                                                             [jar]
+[INFO] Webapp                                                             [war]
+[INFO] 
+[INFO] --------------< com.example.maven-project:maven-project >---------------
+[INFO] Building Maven Project 1.0-SNAPSHOT                                [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ maven-project ---
+[INFO] 
+[INFO] ------------------< com.example.maven-project:server >------------------
+[INFO] Building Server 1.0-SNAPSHOT                                       [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ server ---
+[INFO] Deleting /var/lib/jenkins/workspace/War/server/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ server ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/server/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ server ---
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/War/server/target/classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ server ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/server/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ server ---
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/War/server/target/test-classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ server ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/War/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.example.TestGreeter
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ server ---
+[INFO] Building jar: /var/lib/jenkins/workspace/War/server/target/server.jar
+[INFO] 
+[INFO] ------------------< com.example.maven-project:webapp >------------------
+[INFO] Building Webapp 1.0-SNAPSHOT                                       [3/3]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ webapp ---
+[INFO] Deleting /var/lib/jenkins/workspace/War/webapp/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/webapp/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/webapp/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ webapp ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/War/webapp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [webapp] in [/var/lib/jenkins/workspace/War/webapp/target/webapp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/War/webapp/src/main/webapp]
+[INFO] Webapp assembled in [17 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/War/webapp/target/webapp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Maven Project 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Maven Project ...................................... SUCCESS [  0.148 s]
+[INFO] Server ............................................. SUCCESS [  1.825 s]
+[INFO] Webapp ............................................. SUCCESS [  0.466 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.595 s
+[INFO] Finished at: 2019-12-27T20:33:51Z
+[INFO] ------------------------------------------------------------------------
+[War] $ /bin/sh -xe /tmp/jenkins6517964422657189071.sh
++ sudo docker build -t reddy/webapp .
+Sending build context to Docker daemon  183.8kB
+Step 1/3 : From tomcat:8-jre8
+ ---> 3639174793ba
+Step 2/3 : MAINTAINER "gsrsena666@gmail.com"
+ ---> Using cache
+ ---> 5d9227f10e8c
+Step 3/3 : COPY webapp/target/webapp.war /usr/local/tomcat/webapps
+ ---> 37c40db069cc
+Successfully built 37c40db069cc
+Successfully tagged reddy/webapp:latest
++ docker images
++ sudo banner REPOSITORY TAG IMAGE ID CREATED SIZE reddy/webapp latest 37c40db069cc Less than a second ago 463MB 7777s/wepapp 1.0 4d93c48a0274 About a minute ago 463MB <none> <none> 3600ff7531d0 11 minutes ago 463MB john/1.0 latest c001903268ff 12 minutes ago 463MB tomcat 8-jre8 3639174793ba 7 months ago 463MB
+######  ####### ######  #######  #####    ###   ####### ####### ######  #     #
+#     # #       #     # #     # #     #    #       #    #     # #     #  #   #
+#     # #       #     # #     # #          #       #    #     # #     #   # #
+######  #####   ######  #     #  #####     #       #    #     # ######     #
+#   #   #       #       #     #       #    #       #    #     # #   #      #
+#    #  #       #       #     # #     #    #       #    #     # #    #     #
+#     # ####### #       #######  #####    ###      #    ####### #     #    #
+
+#######    #     #####
+   #      # #   #     #
+   #     #   #  #
+   #    #     # #  ####
+   #    ####### #     #
+   #    #     # #     #
+   #    #     #  #####
+
+  ###   #     #    #     #####  #######
+   #    ##   ##   # #   #     # #
+   #    # # # #  #   #  #       #
+   #    #  #  # #     # #  #### #####
+   #    #     # ####### #     # #
+   #    #     # #     # #     # #
+  ###   #     # #     #  #####  #######
+
+  ###   ######
+   #    #     #
+   #    #     #
+   #    #     #
+   #    #     #
+   #    #     #
+  ###   ######
+
+ #####  ######  #######    #    ####### ####### ######
+#     # #     # #         # #      #    #       #     #
+#       #     # #        #   #     #    #       #     #
+#       ######  #####   #     #    #    #####   #     #
+#       #   #   #       #######    #    #       #     #
+#     # #    #  #       #     #    #    #       #     #
+ #####  #     # ####### #     #    #    ####### ######
+
+ #####    ###   ####### #######
+#     #    #         #  #
+#          #        #   #
+ #####     #       #    #####
+      #    #      #     #
+#     #    #     #      #
+ #####    ###   ####### #######
+
+                                              #
+ #####   ######  #####   #####    #   #      #   #    #  ######  #####     ##
+ #    #  #       #    #  #    #    # #      #    #    #  #       #    #   #  #
+ #    #  #####   #    #  #    #     #      #     #    #  #####   #####   #    #
+ #####   #       #    #  #    #     #     #      # ## #  #       #    #  ######
+ #   #   #       #    #  #    #     #    #       ##  ##  #       #    #  #    #
+ #    #  ######  #####   #####      #   #        #    #  ######  #####   #    #
+
+
+ #         ##     #####  ######   ####    #####
+ #        #  #      #    #       #          #
+ #       #    #     #    #####    ####      #
+ #       ######     #    #            #     #
+ #       #    #     #    #       #    #     #
+ ######  #    #     #    ######   ####      #
+
+ #####  #######         #         ###                     ###    #####   #####
+#     # #    #    ####  #    #   #   #   #####   #####   #   #  #     # #     #
+      #     #    #    # #    #  # #   #  #    #  #    # # #   # #       #     #
+ #####     #     #      ####### #  #  #  #    #  #####  #  #  # ######   ######
+      #   #      #           #  #   # #  #    #  #    # #   # # #     #       #
+#     #   #      #    #      #   #   #   #    #  #    #  #   #  #     # #     #
+ #####    #       ####       #    ###    #####   #####    ###    #####   #####
+
+#
+#        ######   ####    ####
+#        #       #       #
+#        #####    ####    ####
+#        #            #       #
+#        #       #    #  #    #
+#######  ######   ####    ####
+
+
+  #####  #    #    ##    #    #
+    #    #    #   #  #   ##   #
+    #    ######  #    #  # #  #
+    #    #    #  ######  #  # #
+    #    #    #  #    #  #   ##
+    #    #    #  #    #  #    #
+
+
+   ##
+  #  #
+ #    #
+ ######
+ #    #
+ #    #
+
+
+  ####   ######   ####    ####   #    #  #####
+ #       #       #    #  #    #  ##   #  #    #
+  ####   #####   #       #    #  # #  #  #    #
+      #  #       #       #    #  #  # #  #    #
+ #    #  #       #    #  #    #  #   ##  #    #
+  ####   ######   ####    ####   #    #  #####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+   #              ###
+  ##             #   #
+ # #            # #   #
+   #            #  #  #
+   #      ###   #   # #
+   #      ###    #   #
+ #####    ###     ###
+
+#                #####   #####          #        #####            ###    #####
+#    #   #####  #     # #     #   ####  #    #  #     #    ##    #   #  #     #
+#    #   #    # #     #       #  #    # #    #  #     #   #  #  # #   #       #
+#######  #    #  ######  #####   #      #######  #####   #    # #  #  #  #####
+     #   #    #       #       #  #           #  #     #  ###### #   # # #
+     #   #    # #     # #     #  #    #      #  #     #  #    #  #   #  #
+     #   #####   #####   #####    ####       #   #####   #    #   ###   #######
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##
+  #  #
+ #    #
+ ######
+ #    #
+ #    #
+
+
+ #    #     #    #    #  #    #   #####  ######
+ ##  ##     #    ##   #  #    #     #    #
+ # ## #     #    # #  #  #    #     #    #####
+ #    #     #    #  # #  #    #     #    #
+ #    #     #    #   ##  #    #     #    #
+ #    #     #    #    #   ####      #    ######
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+    #                                     #
+   #     #    #   ####   #    #  ######    #
+  #      ##   #  #    #  ##   #  #          #
+ #       # #  #  #    #  # #  #  #####       #
+  #      #  # #  #    #  #  # #  #          #
+   #     #   ##  #    #  #   ##  #         #
+    #    #    #   ####   #    #  ######   #
+
+    #                                     #
+   #     #    #   ####   #    #  ######    #
+  #      ##   #  #    #  ##   #  #          #
+ #       # #  #  #    #  # #  #  #####       #
+  #      #  # #  #    #  #  # #  #          #
+   #     #   ##  #    #  #   ##  #         #
+    #    #    #   ####   #    #  ######   #
+
+ #####   #####    ###     ###                   ####### #######  #####     #
+#     # #     #  #   #   #   #   ######  ###### #    #  #       #     #   ##
+      # #       # #   # # #   #  #       #          #   #             #  # #
+ #####  ######  #  #  # #  #  #  #####   #####     #     #####   #####     #
+      # #     # #   # # #   # #  #       #        #           #       #    #
+#     # #     #  #   #   #   #   #       #        #     #     # #     #    #
+ #####   #####    ###     ###    #       #        #      #####   #####   #####
+
+   #       #
+  ##      ##
+ # #     # #
+   #       #
+   #       #
+   #       #
+ #####   #####
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+                                      #    #              ###
+      #   ####   #    #  #    #      #    ##             #   #
+      #  #    #  #    #  ##   #     #    # #            # #   #
+      #  #    #  ######  # #  #    #       #            #  #  #
+      #  #    #  #    #  #  # #   #        #      ###   #   # #
+ #    #  #    #  #    #  #   ##  #         #      ###    #   #
+  ####    ####   #    #  #    # #        #####    ###     ###
+
+
+ #         ##     #####  ######   ####    #####
+ #        #  #      #    #       #          #
+ #       #    #     #    #####    ####      #
+ #       ######     #    #            #     #
+ #       #    #     #    #       #    #     #
+ ######  #    #     #    ######   ####      #
+
+          ###     ###      #     #####    ###    #####   #####   #####   #####
+  ####   #   #   #   #    ##    #     #  #   #  #     # #     # #     # #     #
+ #    # # #   # # #   #  # #    #     # # #   #       #       # #       #     #
+ #      #  #  # #  #  #    #     ###### #  #  #  #####   #####  ######   #####
+ #      #   # # #   # #    #          # #   # #       # #       #     # #     #
+ #    #  #   #   #   #     #    #     #  #   #  #     # #       #     # #     #
+  ####    ###     ###    #####   #####    ###    #####  #######  #####   #####
+
+   #     #####
+  ##    #     #
+ # #          #
+   #     #####
+   #    #
+   #    #
+ #####  #######
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+
+  #####   ####   #    #   ####     ##     #####
+    #    #    #  ##  ##  #    #   #  #      #
+    #    #    #  # ## #  #       #    #     #
+    #    #    #  #    #  #       ######     #
+    #    #    #  #    #  #    #  #    #     #
+    #     ####   #    #   ####   #    #     #
+
+ #####                                   #####
+#     #               #  #####   ###### #     #
+#     #               #  #    #  #      #     #
+ #####   #####        #  #    #  #####   #####
+#     #               #  #####   #      #     #
+#     #          #    #  #   #   #      #     #
+ #####            ####   #    #  ######  #####
+
+ #####   #####   #####   #####     #    ####### #       #######  #####   #####
+#     # #     # #     # #     #   ##    #    #  #    #  #    #  #     # #     #
+      # #             # #     #  # #        #   #    #      #   #     #       #
+ #####  ######   #####   ######    #       #    #######    #     ######  #####
+      # #     #       #       #    #      #          #    #           #       #
+#     # #     # #     # #     #    #      #          #    #     #     # #     #
+ #####   #####   #####   #####   #####    #          #    #      #####   #####
+
+#######
+#    #
+    #
+   #
+  #
+  #
+  #
+
+
+ #    #   ####   #    #   #####  #    #   ####
+ ##  ##  #    #  ##   #     #    #    #  #
+ # ## #  #    #  # #  #     #    ######   ####
+ #    #  #    #  #  # #     #    #    #       #
+ #    #  #    #  #   ##     #    #    #  #    #
+ #    #   ####   #    #     #    #    #   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
++ sudo docker tag reddy/webapp 7777s/wepapp:1.0
++ sudo docker push 7777s/wepapp:1.0
+The push refers to repository [docker.io/7777s/wepapp]
+4c34e6cd58e5: Preparing
+f24d8b358bb1: Preparing
+c8bcc49b9925: Preparing
+f0e1731fd286: Preparing
+2b6c38ff3137: Preparing
+d38f3d5a39fb: Preparing
+fe60061c6c4e: Preparing
+7d63f8777ebf: Preparing
+1b958b53b256: Preparing
+2c719774c1e1: Preparing
+ec62f19bb3aa: Preparing
+f94641f1fe1f: Preparing
+fe60061c6c4e: Waiting
+7d63f8777ebf: Waiting
+1b958b53b256: Waiting
+2c719774c1e1: Waiting
+ec62f19bb3aa: Waiting
+d38f3d5a39fb: Waiting
+f94641f1fe1f: Waiting
+c8bcc49b9925: Mounted from library/tomcat
+2b6c38ff3137: Mounted from library/tomcat
+f24d8b358bb1: Mounted from library/tomcat
+f0e1731fd286: Mounted from library/tomcat
+4c34e6cd58e5: Pushed
+d38f3d5a39fb: Mounted from library/tomcat
+fe60061c6c4e: Mounted from library/tomcat
+7d63f8777ebf: Mounted from library/tomcat
+1b958b53b256: Mounted from library/tomcat
+2c719774c1e1: Mounted from library/tomcat
+ec62f19bb3aa: Mounted from library/tomcat
+f94641f1fe1f: Mounted from library/tomcat
+1.0: digest: sha256:f2d64cf0cd05525efb114f101596d2edf27a47d7d250067368700554154504d7 size: 2834
+[SSH] script:
+
+sudo rm -rf /opt/tomcat/webapps/webapps
+sudo rm -rf /opt/tomcat/webapps/*.war
+
+[SSH] executing...
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying /var/lib/jenkins/workspace/War/webapp/target/webapp.war to container Tomcat 7.x Remote with context null
+  Redeploying [/var/lib/jenkins/workspace/War/webapp/target/webapp.war]
+  Undeploying [/var/lib/jenkins/workspace/War/webapp/target/webapp.war]
+  Deploying [/var/lib/jenkins/workspace/War/webapp/target/webapp.war]
+Finished: SUCCESS

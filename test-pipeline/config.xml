@@ -1,0 +1,73 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.36">
+  <actions>
+    <org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction plugin="workflow-multibranch@2.21">
+      <jobPropertyDescriptors>
+        <string>hudson.model.ParametersDefinitionProperty</string>
+      </jobPropertyDescriptors>
+    </org.jenkinsci.plugins.workflow.multibranch.JobPropertyTrackerAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.5.0"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.5.0">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>branch</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>branch</name>
+          <description>Selcect the branch to clone the code</description>
+          <choices>
+            <string>master</string>
+            <string>develop</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.78">
+    <script>pipeline {
+    agent {
+        label &apos;master&apos;
+    }
+    tools {
+      maven &apos;3.6.3&apos;
+    }
+
+    parameters {
+       choice choices: [&apos;master&apos;, &apos;develop&apos;], description: &apos;Selcect the branch to clone the code&apos;, name: &apos;branch&apos;
+    }
+
+    stages {
+        stage(&apos;SCM Clone&apos;){
+            steps {
+                 git url: &quot;https://github.com/chandracpl/Sample-War.git&quot;, branch: &quot;${params.branch}&quot;
+            }
+        }
+        stage(&apos;Build&apos;){
+            steps {
+              sh &apos;mvn clean package&apos;
+            }
+        }
+        stage(&apos;Deploy&apos;){
+            steps {
+              sh &apos;ssh root@172.31.28.249 ls -la&apos;
+              
+            }
+        }               
+        
+    }
+
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

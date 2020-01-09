@@ -1,0 +1,1676 @@
+Started by user [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/War
+using credential 9b7eeebf-2fe3-4788-a4ab-432188ca4fe6
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/chandracpl/Sample-War.git # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/Sample-War.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/Sample-War.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3c55fe7660cc12c765ff5a6a7801e6df7f6a44fc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3c55fe7660cc12c765ff5a6a7801e6df7f6a44fc # timeout=10
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 3c55fe7660cc12c765ff5a6a7801e6df7f6a44fc # timeout=10
+[War] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/3.6.3/bin/mvn clean package
+[INFO] Scanning for projects...
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.example.maven-project:server:jar:1.0-SNAPSHOT
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.example.maven-project:webapp:war:1.0-SNAPSHOT
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Some problems were encountered while building the effective model for com.example.maven-project:maven-project:pom:1.0-SNAPSHOT
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 51, column 24
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] 
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] The project com.example.maven-project:maven-project:pom:1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Maven Project                                                      [pom]
+[INFO] Server                                                             [jar]
+[INFO] Webapp                                                             [war]
+[INFO] 
+[INFO] --------------< com.example.maven-project:maven-project >---------------
+[INFO] Building Maven Project 1.0-SNAPSHOT                                [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ maven-project ---
+[INFO] 
+[INFO] ------------------< com.example.maven-project:server >------------------
+[INFO] Building Server 1.0-SNAPSHOT                                       [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ server ---
+[INFO] Deleting /var/lib/jenkins/workspace/War/server/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ server ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/server/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ server ---
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/War/server/target/classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ server ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/server/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ server ---
+[INFO] Compiling 1 source file to /var/lib/jenkins/workspace/War/server/target/test-classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ server ---
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/War/server/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.example.TestGreeter
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ server ---
+[INFO] Building jar: /var/lib/jenkins/workspace/War/server/target/server.jar
+[INFO] 
+[INFO] ------------------< com.example.maven-project:webapp >------------------
+[INFO] Building Webapp 1.0-SNAPSHOT                                       [3/3]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ webapp ---
+[INFO] Deleting /var/lib/jenkins/workspace/War/webapp/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/webapp/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ webapp ---
+[debug] execute contextualize
+[INFO] Using 'utf-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/War/webapp/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ webapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ webapp ---
+[INFO] No tests to run.
+[INFO] Surefire report directory: /var/lib/jenkins/workspace/War/webapp/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.2:war (default-war) @ webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [webapp] in [/var/lib/jenkins/workspace/War/webapp/target/webapp]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/War/webapp/src/main/webapp]
+[INFO] Webapp assembled in [17 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/War/webapp/target/webapp.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Maven Project 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Maven Project ...................................... SUCCESS [  0.178 s]
+[INFO] Server ............................................. SUCCESS [  1.595 s]
+[INFO] Webapp ............................................. SUCCESS [  0.367 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.284 s
+[INFO] Finished at: 2020-01-02T10:40:00Z
+[INFO] ------------------------------------------------------------------------
+[War] $ /bin/sh -xe /tmp/jenkins4984250026906587108.sh
++ sudo docker build -t reddy/webapp .
+Sending build context to Docker daemon  272.9kB
+Step 1/4 : From tomcat:8-jre8
+ ---> 3639174793ba
+Step 2/4 : MAINTAINER "gsrsena666@gmail.com"
+ ---> Using cache
+ ---> 5d9227f10e8c
+Step 3/4 : COPY webapp/target/webapp.war /usr/local/tomcat/webapps
+ ---> 11901ca68235
+Step 4/4 : CMD ["/usr/local/tomcat/bin/catalina.sh", "run"]
+ ---> Running in 0cb8e69cee77
+Removing intermediate container 0cb8e69cee77
+ ---> 14cb948b4559
+Successfully built 14cb948b4559
+Successfully tagged reddy/webapp:latest
++ docker images
++ sudo banner REPOSITORY TAG IMAGE ID CREATED SIZE reddy/webapp latest 14cb948b4559 Less than a second ago 463MB 7777s/wepapp 48 44502240010e 2 minutes ago 463MB 7777s/wepapp latest 44502240010e 2 minutes ago 463MB 7777s/wepapp 47 86c77f436582 6 minutes ago 463MB 7777s/wepapp 46 e3ef87e0a4e4 10 minutes ago 463MB 7777s/wepapp 45 bf12cd904d41 15 minutes ago 463MB 7777s/wepapp 44 e614839c3ffd 18 minutes ago 463MB 7777s/wepapp 43 5d139560626c 25 minutes ago 463MB 7777s/wepapp 42 ae3f28bbb270 About an hour ago 463MB 7777s/wepapp 41 ace597d14735 About an hour ago 463MB 7777s/wepapp 40 8390997d5bf9 About an hour ago 463MB 7777s/wepapp 39 8501dc17213e About an hour ago 463MB 7777s/wepapp 38 c4caf277c7ed About an hour ago 463MB 7777s/wepapp 37 a13d3d89243b About an hour ago 463MB 7777s/wepapp 36 f58b735e7a44 About an hour ago 463MB 7777s/wepapp 35 365345fdb0e0 5 days ago 463MB 7777s/wepapp 34 183f4a38751b 5 days ago 463MB 7777s/wepapp 1.0 37c40db069cc 5 days ago 463MB <none> <none> 4d93c48a0274 5 days ago 463MB <none> <none> 3600ff7531d0 5 days ago 463MB john/1.0 latest c001903268ff 5 days ago 463MB tomcat 8-jre8 3639174793ba 7 months ago 463MB
+######  ####### ######  #######  #####    ###   ####### ####### ######  #     #
+#     # #       #     # #     # #     #    #       #    #     # #     #  #   #
+#     # #       #     # #     # #          #       #    #     # #     #   # #
+######  #####   ######  #     #  #####     #       #    #     # ######     #
+#   #   #       #       #     #       #    #       #    #     # #   #      #
+#    #  #       #       #     # #     #    #       #    #     # #    #     #
+#     # ####### #       #######  #####    ###      #    ####### #     #    #
+
+#######    #     #####
+   #      # #   #     #
+   #     #   #  #
+   #    #     # #  ####
+   #    ####### #     #
+   #    #     # #     #
+   #    #     #  #####
+
+  ###   #     #    #     #####  #######
+   #    ##   ##   # #   #     # #
+   #    # # # #  #   #  #       #
+   #    #  #  # #     # #  #### #####
+   #    #     # ####### #     # #
+   #    #     # #     # #     # #
+  ###   #     # #     #  #####  #######
+
+  ###   ######
+   #    #     #
+   #    #     #
+   #    #     #
+   #    #     #
+   #    #     #
+  ###   ######
+
+ #####  ######  #######    #    ####### ####### ######
+#     # #     # #         # #      #    #       #     #
+#       #     # #        #   #     #    #       #     #
+#       ######  #####   #     #    #    #####   #     #
+#       #   #   #       #######    #    #       #     #
+#     # #    #  #       #     #    #    #       #     #
+ #####  #     # ####### #     #    #    ####### ######
+
+ #####    ###   ####### #######
+#     #    #         #  #
+#          #        #   #
+ #####     #       #    #####
+      #    #      #     #
+#     #    #     #      #
+ #####    ###   ####### #######
+
+                                              #
+ #####   ######  #####   #####    #   #      #   #    #  ######  #####     ##
+ #    #  #       #    #  #    #    # #      #    #    #  #       #    #   #  #
+ #    #  #####   #    #  #    #     #      #     #    #  #####   #####   #    #
+ #####   #       #    #  #    #     #     #      # ## #  #       #    #  ######
+ #   #   #       #    #  #    #     #    #       ##  ##  #       #    #  #    #
+ #    #  ######  #####   #####      #   #        #    #  ######  #####   #    #
+
+
+ #         ##     #####  ######   ####    #####
+ #        #  #      #    #       #          #
+ #       #    #     #    #####    ####      #
+ #       ######     #    #            #     #
+ #       #    #     #    #       #    #     #
+ ######  #    #     #    ######   ####      #
+
+   #    #                        #####  #        #####          #       #######
+  ##    #    #    ####   #####  #     # #    #  #     #  #####  #    #  #
+ # #    #    #   #    #  #    # #     # #    #  #     #  #    # #    #  #
+   #    #######  #       #####   ###### #######  #####   #####  #######  #####
+   #         #   #       #    #       #      #  #     #  #    #      #        #
+   #         #   #    #  #    # #     #      #  #     #  #    #      #  #     #
+ #####       #    ####   #####   #####       #   #####   #####       #   #####
+
+#
+#        ######   ####    ####
+#        #       #       #
+#        #####    ####    ####
+#        #            #       #
+#        #       #    #  #    #
+#######  ######   ####    ####
+
+
+  #####  #    #    ##    #    #
+    #    #    #   #  #   ##   #
+    #    ######  #    #  # #  #
+    #    #    #  ######  #  # #
+    #    #    #  #    #  #   ##
+    #    #    #  #    #  #    #
+
+
+   ##
+  #  #
+ #    #
+ ######
+ #    #
+ #    #
+
+
+  ####   ######   ####    ####   #    #  #####
+ #       #       #    #  #    #  ##   #  #    #
+  ####   #####   #       #    #  # #  #  #    #
+      #  #       #       #    #  #  # #  #    #
+ #    #  #       #    #  #    #  #   ##  #    #
+  ####   ######   ####    ####   #    #  #####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#        #####
+#    #  #     #
+#    #  #     #
+#######  #####
+     #  #     #
+     #  #     #
+     #   #####
+
+#       #       #######   ###    #####   #####  #         ###     ###      #
+#    #  #    #  #        #   #  #     # #     # #    #   #   #   #   #    ##
+#    #  #    #  #       # #   #       #       # #    #  # #   # # #   #  # #
+####### #######  #####  #  #  #  #####   #####  ####### #  #  # #  #  #    #
+     #       #        # #   # # #       #            #  #   # # #   # #    #
+     #       #  #     #  #   #  #       #            #   #   #   #   #     #
+     #       #   #####    ###   ####### #######      #    ###     ###    #####
+
+ #####
+#     #
+      #
+ #####
+#
+#
+#######
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+
+ #         ##     #####  ######   ####    #####
+ #        #  #      #    #       #          #
+ #       #    #     #    #####    ####      #
+ #       ######     #    #            #     #
+ #       #    #     #    #       #    #     #
+ ######  #    #     #    ######   ####      #
+
+#       #       #######   ###    #####   #####  #         ###     ###      #
+#    #  #    #  #        #   #  #     # #     # #    #   #   #   #   #    ##
+#    #  #    #  #       # #   #       #       # #    #  # #   # # #   #  # #
+####### #######  #####  #  #  #  #####   #####  ####### #  #  # #  #  #    #
+     #       #        # #   # # #       #            #  #   # # #   # #    #
+     #       #  #     #  #   #  #       #            #   #   #   #   #     #
+     #       #   #####    ###   ####### #######      #    ###     ###    #####
+
+ #####
+#     #
+      #
+ #####
+#
+#
+#######
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#       #######
+#    #  #    #
+#    #      #
+#######    #
+     #    #
+     #    #
+     #    #
+
+ #####   #####          ####### #######         #        #####   #####  #######
+#     # #     #   ####  #    #  #    #   ###### #    #  #     # #     # #
+#     # #        #    #     #       #    #      #    #        # #       #
+ #####  ######   #         #       #     #####  #######  #####  ######   #####
+#     # #     #  #        #       #      #           #        # #     #       #
+#     # #     #  #    #   #       #      #           #  #     # #     # #     #
+ #####   #####    ####    #       #      #           #   #####   #####   #####
+
+ #####
+#     #
+#
+######
+#     #
+#     #
+ #####
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#        #####
+#    #  #     #
+#    #  #
+####### ######
+     #  #     #
+     #  #     #
+     #   #####
+
+         #####                   #####  #######           ###           #
+ ###### #     #  ######  ###### #     # #    #   ######  #   #     ##   #    #
+ #            #  #       #      #     #     #    #      # #   #   #  #  #    #
+ #####   #####   #####   #####   #####     #     #####  #  #  #  #    # #######
+ #            #  #       #      #     #   #      #      #   # #  ######      #
+ #      #     #  #       #      #     #   #      #       #   #   #    #      #
+ ######  #####   ######  #       #####    #      ######   ###    #    #      #
+
+   #      ###
+  ##     #   #
+ # #    # #   #
+   #    #  #  #
+   #    #   # #
+   #     #   #
+ #####    ###
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#       #######
+#    #  #
+#    #  #
+#######  #####
+     #        #
+     #  #     #
+     #   #####
+
+                   #     #####                   #####    ###   #
+ #####   ######   ##    #     #   ####   #####  #     #  #   #  #    #   #####
+ #    #  #       # #          #  #    #  #    # #     # # #   # #    #   #    #
+ #####   #####     #     #####   #       #    #  ###### #  #  # #######  #    #
+ #    #  #         #    #        #       #    #       # #   # #      #   #    #
+ #    #  #         #    #        #    #  #    # #     #  #   #       #   #    #
+ #####   #       #####  #######   ####   #####   #####    ###        #   #####
+
+   #    #######
+  ##    #
+ # #    #
+   #     #####
+   #          #
+   #    #     #
+ #####   #####
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#       #
+#    #  #    #
+#    #  #    #
+####### #######
+     #       #
+     #       #
+     #       #
+
+         #####     #    #        #####   #####   #####           #####
+ ###### #     #   ##    #    #  #     # #     # #     #   ####  #     #  ######
+ #      #        # #    #    #  #     #       # #     #  #    #       #  #
+ #####  ######     #    #######  #####   #####   ######  #       #####   #####
+ #      #     #    #         #  #     #       #       #  #            #  #
+ #      #     #    #         #  #     # #     # #     #  #    # #     #  #
+ ######  #####   #####       #   #####   #####   #####    ####   #####   #
+
+   #     #####
+  ##    #     #
+ # #    #     #
+   #     #####
+   #    #     #
+   #    #     #
+ #####   #####
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#        #####
+#    #  #     #
+#    #        #
+#######  #####
+     #        #
+     #  #     #
+     #   #####
+
+#######            #     #####   #####  #######  #####    ###    #####   #####
+#        #####    ##    #     # #     # #       #     #  #   #  #     # #     #
+#        #    #  # #          # #     # #       #       # #   # #             #
+ #####   #    #    #     #####   ######  #####  ######  #  #  # ######   #####
+      #  #    #    #          #       #       # #     # #   # # #     # #
+#     #  #    #    #    #     # #     # #     # #     #  #   #  #     # #
+ #####   #####   #####   #####   #####   #####   #####    ###    #####  #######
+
+ #####  #######
+#     # #
+      # #
+ #####   #####
+#             #
+#       #     #
+#######  #####
+
+
+ #    #     #    #    #  #    #   #####  ######   ####
+ ##  ##     #    ##   #  #    #     #    #       #
+ # ## #     #    # #  #  #    #     #    #####    ####
+ #    #     #    #  # #  #    #     #    #            #
+ #    #     #    #   ##  #    #     #    #       #    #
+ #    #     #    #    #   ####      #    ######   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#        #####
+#    #  #     #
+#    #        #
+#######  #####
+     #  #
+     #  #
+     #  #######
+
+                 #####           #####   #####                           #####
+   ##    ###### #     #  ###### #     # #     #  #####   #####   #####  #     #
+  #  #   #            #  #            # #     #  #    #  #    #  #    #       #
+ #    #  #####   #####   #####   #####   #####   #####   #####   #####   #####
+ ######  #            #  #      #       #     #  #    #  #    #  #    # #
+ #    #  #      #     #  #      #       #     #  #    #  #    #  #    # #
+ #    #  ######  #####   #      #######  #####   #####   #####   #####  #######
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#          #
+#    #    ##
+#    #   # #
+#######    #
+     #     #
+     #     #
+     #   #####
+
+                        #######  #####  #######            #    #       #######
+   ##     ####   ###### #       #     # #    #   #####    ##    #    #  #    #
+  #  #   #    #  #      #       #     #     #    #    #  # #    #    #      #
+ #    #  #       #####   #####   ######    #     #    #    #    #######    #
+ ######  #       #            #       #   #      #    #    #         #    #
+ #    #  #    #  #      #     # #     #   #      #    #    #         #    #
+ #    #   ####   ######  #####   #####    #      #####   #####       #    #
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+#         ###
+#    #   #   #
+#    #  # #   #
+####### #  #  #
+     #  #   # #
+     #   #   #
+     #    ###
+
+ #####   #####   #####    ###    #####   #####  #######         #######
+#     # #     # #     #  #   #  #     # #     # #    #   #####  #        #####
+#     #       # #     # # #   # #     # #     #     #    #    # #        #    #
+ #####   #####   ###### #  #  #  ######  ######    #     #    #  #####   #####
+#     #       #       # #   # #       #       #   #      #    #       #  #    #
+#     # #     # #     #  #   #  #     # #     #   #      #    # #     #  #    #
+ #####   #####   #####    ###    #####   #####    #      #####   #####   #####
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+ #####   #####
+#     # #     #
+      # #     #
+ #####   ######
+      #       #
+#     # #     #
+ #####   #####
+
+ #####  #######   ###      #                       #    #######  #####     #
+#     # #        #   #    ##     #####    ####    ##    #    #  #     #   ##
+#     # #       # #   #  # #     #    #  #    #  # #        #         #  # #
+ #####   #####  #  #  #    #     #    #  #         #       #     #####     #
+#     #       # #   # #    #     #    #  #         #      #     #          #
+#     # #     #  #   #     #     #    #  #    #    #      #     #          #
+ #####   #####    ###    #####   #####    ####   #####    #     #######  #####
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+ #####   #####
+#     # #     #
+      # #     #
+ #####   #####
+      # #     #
+#     # #     #
+ #####   #####
+
+        #                                #####  ####### #######         #######
+  ####  #    #    ####     ##    ###### #     # #    #  #    #    ####  #    #
+ #    # #    #   #    #   #  #   #            #     #       #    #    #     #
+ #      #######  #       #    #  #####   #####     #       #     #         #
+ #           #   #       ######  #      #         #       #      #        #
+ #    #      #   #    #  #    #  #      #         #       #      #    #   #
+  ####       #    ####   #    #  #      #######   #       #       ####    #
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+ #####  #######
+#     # #    #
+      #     #
+ #####     #
+      #   #
+#     #   #
+ #####    #
+
+           #     #####           #####           #####   #####   #####  #
+   ##     ##    #     #  #####  #     #  #####  #     # #     # #     # #    #
+  #  #   # #          #  #    #       #  #    # #     # #     #       # #    #
+ #    #    #     #####   #    #  #####   #    #  #####   ######  #####  #######
+ ######    #          #  #    #       #  #    # #     #       # #            #
+ #    #    #    #     #  #    # #     #  #    # #     # #     # #            #
+ #    #  #####   #####   #####   #####   #####   #####   #####  #######      #
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+ #####   #####
+#     # #     #
+      # #
+ #####  ######
+      # #     #
+#     # #     #
+ #####   #####
+
+        #######  #####          #######  #####  #######         #######
+ ###### #       #     #  #####  #    #  #     # #        ###### #    #     ##
+ #      #       #     #  #    #     #         # #        #          #     #  #
+ #####   #####   #####   #####     #     #####   #####   #####     #     #    #
+ #            # #     #  #    #   #           #       #  #        #      ######
+ #      #     # #     #  #    #   #     #     # #     #  #        #      #    #
+ #       #####   #####   #####    #      #####   #####   ######   #      #    #
+
+   #
+  # #    #####    ####   #    #   #####
+ #   #   #    #  #    #  #    #     #
+#     #  #####   #    #  #    #     #
+#######  #    #  #    #  #    #     #
+#     #  #    #  #    #  #    #     #
+#     #  #####    ####    ####      #
+
+
+   ##    #    #
+  #  #   ##   #
+ #    #  # #  #
+ ######  #  # #
+ #    #  #   ##
+ #    #  #    #
+
+
+ #    #   ####   #    #  #####
+ #    #  #    #  #    #  #    #
+ ######  #    #  #    #  #    #
+ #    #  #    #  #    #  #####
+ #    #  #    #  #    #  #   #
+ #    #   ####    ####   #    #
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+ #####  #######
+#     # #
+      # #
+ #####   #####
+      #       #
+#     # #     #
+ #####   #####
+
+ #####   #####  #######  #####  #       #######                           ###
+#     # #     # #       #     # #    #  #        ######  #####   #####   #   #
+      # #       #             # #    #  #        #       #    #  #    # # #   #
+ #####  ######   #####   #####  #######  #####   #####   #    #  #####  #  #  #
+      # #     #       #       #      #        #  #       #    #  #    # #   # #
+#     # #     # #     # #     #      #  #     #  #       #    #  #    #  #   #
+ #####   #####   #####   #####       #   #####   #       #####   #####    ###
+
+#######
+#
+#
+ #####
+      #
+#     #
+ #####
+
+
+ #####     ##     #   #   ####
+ #    #   #  #     # #   #
+ #    #  #    #     #     ####
+ #    #  ######     #         #
+ #    #  #    #     #    #    #
+ #####   #    #     #     ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+ #####  #
+#     # #    #
+      # #    #
+ #####  #######
+      #      #
+#     #      #
+ #####       #
+
+   #     #####   #####          #                #####   #####  ####### #######
+  ##    #     # #     #  ###### #    #     ##   #     # #     # #    #  #
+ # #    #     #       #  #      #    #    #  #        # #     #     #   #
+   #     #####   #####   #####  #######  #    #  #####   #####     #     #####
+   #    #     #       #  #           #   ######       # #     #   #           #
+   #    #     # #     #  #           #   #    # #     # #     #   #     #     #
+ #####   #####   #####   #           #   #    #  #####   #####    #      #####
+
+#######
+#
+#
+ #####
+      #
+#     #
+ #####
+
+
+ #####     ##     #   #   ####
+ #    #   #  #     # #   #
+ #    #  #    #     #     ####
+ #    #  ######     #         #
+ #    #  #    #     #    #    #
+ #####   #    #     #     ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+####### ####### ####### #######               #
+#    #  #    #  #    #  #    #    ####       #   #    #  ######  #####     ##
+    #       #       #       #    #          #    #    #  #       #    #   #  #
+   #       #       #       #      ####     #     #    #  #####   #    #  #    #
+  #       #       #       #           #   #      # ## #  #       #####   ######
+  #       #       #       #      #    #  #       ##  ##  #       #       #    #
+  #       #       #       #       ####  #        #    #  ######  #       #    #
+
+   #              ###
+  ##             #   #
+ # #            # #   #
+   #            #  #  #
+   #      ###   #   # #
+   #      ###    #   #
+ #####    ###     ###
+
+ #####  #######         #         ###                     ###    #####   #####
+#     # #    #    ####  #    #   #   #   #####   #####   #   #  #     # #     #
+      #     #    #    # #    #  # #   #  #    #  #    # # #   # #       #     #
+ #####     #     #      ####### #  #  #  #    #  #####  #  #  # ######   ######
+      #   #      #           #  #   # #  #    #  #    # #   # # #     #       #
+#     #   #      #    #      #   #   #   #    #  #    #  #   #  #     # #     #
+ #####    #       ####       #    ###    #####   #####    ###    #####   #####
+
+#######
+#
+#
+ #####
+      #
+#     #
+ #####
+
+
+ #####     ##     #   #   ####
+ #    #   #  #     # #   #
+ #    #  #    #     #     ####
+ #    #  ######     #         #
+ #    #  #    #     #    #    #
+ #####   #    #     #     ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+    #                                     #
+   #     #    #   ####   #    #  ######    #
+  #      ##   #  #    #  ##   #  #          #
+ #       # #  #  #    #  # #  #  #####       #
+  #      #  # #  #    #  #  # #  #          #
+   #     #   ##  #    #  #   ##  #         #
+    #    #    #   ####   #    #  ######   #
+
+    #                                     #
+   #     #    #   ####   #    #  ######    #
+  #      ##   #  #    #  ##   #  #          #
+ #       # #  #  #    #  # #  #  #####       #
+  #      #  # #  #    #  #  # #  #          #
+   #     #   ##  #    #  #   ##  #         #
+    #    #    #   ####   #    #  ######   #
+
+#                #####   #####          #        #####            ###    #####
+#    #   #####  #     # #     #   ####  #    #  #     #    ##    #   #  #     #
+#    #   #    # #     #       #  #    # #    #  #     #   #  #  # #   #       #
+#######  #    #  ######  #####   #      #######  #####   #    # #  #  #  #####
+     #   #    #       #       #  #           #  #     #  ###### #   # # #
+     #   #    # #     # #     #  #    #      #  #     #  #    #  #   #  #
+     #   #####   #####   #####    ####       #   #####   #    #   ###   #######
+
+#######
+#
+#
+ #####
+      #
+#     #
+ #####
+
+
+ #####     ##     #   #   ####
+ #    #   #  #     # #   #
+ #    #  #    #     #     ####
+ #    #  ######     #         #
+ #    #  #    #     #    #    #
+ #####   #    #     #     ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+    #                                     #
+   #     #    #   ####   #    #  ######    #
+  #      ##   #  #    #  ##   #  #          #
+ #       # #  #  #    #  # #  #  #####       #
+  #      #  # #  #    #  #  # #  #          #
+   #     #   ##  #    #  #   ##  #         #
+    #    #    #   ####   #    #  ######   #
+
+    #                                     #
+   #     #    #   ####   #    #  ######    #
+  #      ##   #  #    #  ##   #  #          #
+ #       # #  #  #    #  # #  #  #####       #
+  #      #  # #  #    #  #  # #  #          #
+   #     #   ##  #    #  #   ##  #         #
+    #    #    #   ####   #    #  ######   #
+
+ #####   #####    ###     ###                   ####### #######  #####     #
+#     # #     #  #   #   #   #   ######  ###### #    #  #       #     #   ##
+      # #       # #   # # #   #  #       #          #   #             #  # #
+ #####  ######  #  #  # #  #  #  #####   #####     #     #####   #####     #
+      # #     # #   # # #   # #  #       #        #           #       #    #
+#     # #     #  #   #   #   #   #       #        #     #     # #     #    #
+ #####   #####    ###     ###    #       #        #      #####   #####   #####
+
+#######
+#
+#
+ #####
+      #
+#     #
+ #####
+
+
+ #####     ##     #   #   ####
+ #    #   #  #     # #   #
+ #    #  #    #     #     ####
+ #    #  ######     #         #
+ #    #  #    #     #    #    #
+ #####   #    #     #     ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+                                      #    #              ###
+      #   ####   #    #  #    #      #    ##             #   #
+      #  #    #  #    #  ##   #     #    # #            # #   #
+      #  #    #  ######  # #  #    #       #            #  #  #
+      #  #    #  #    #  #  # #   #        #      ###   #   # #
+ #    #  #    #  #    #  #   ##  #         #      ###    #   #
+  ####    ####   #    #  #    # #        #####    ###     ###
+
+
+ #         ##     #####  ######   ####    #####
+ #        #  #      #    #       #          #
+ #       #    #     #    #####    ####      #
+ #       ######     #    #            #     #
+ #       #    #     #    #       #    #     #
+ ######  #    #     #    ######   ####      #
+
+          ###     ###      #     #####    ###    #####   #####   #####   #####
+  ####   #   #   #   #    ##    #     #  #   #  #     # #     # #     # #     #
+ #    # # #   # # #   #  # #    #     # # #   #       #       # #       #     #
+ #      #  #  # #  #  #    #     ###### #  #  #  #####   #####  ######   #####
+ #      #   # # #   # #    #          # #   # #       # #       #     # #     #
+ #    #  #   #   #   #     #    #     #  #   #  #     # #       #     # #     #
+  ####    ###     ###    #####   #####    ###    #####  #######  #####   #####
+
+#######
+#
+#
+ #####
+      #
+#     #
+ #####
+
+
+ #####     ##     #   #   ####
+ #    #   #  #     # #   #
+ #    #  #    #     #     ####
+ #    #  ######     #         #
+ #    #  #    #     #    #    #
+ #####   #    #     #     ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
+
+  #####   ####   #    #   ####     ##     #####
+    #    #    #  ##  ##  #    #   #  #      #
+    #    #    #  # ## #  #       #    #     #
+    #    #    #  #    #  #       ######     #
+    #    #    #  #    #  #    #  #    #     #
+    #     ####   #    #   ####   #    #     #
+
+ #####                                   #####
+#     #               #  #####   ###### #     #
+#     #               #  #    #  #      #     #
+ #####   #####        #  #    #  #####   #####
+#     #               #  #####   #      #     #
+#     #          #    #  #   #   #      #     #
+ #####            ####   #    #  ######  #####
+
+ #####   #####   #####   #####     #    ####### #       #######  #####   #####
+#     # #     # #     # #     #   ##    #    #  #    #  #    #  #     # #     #
+      # #             # #     #  # #        #   #    #      #   #     #       #
+ #####  ######   #####   ######    #       #    #######    #     ######  #####
+      # #     #       #       #    #      #          #    #           #       #
+#     # #     # #     # #     #    #      #          #    #     #     # #     #
+ #####   #####   #####   #####   #####    #          #    #      #####   #####
+
+#######
+#    #
+    #
+   #
+  #
+  #
+  #
+
+
+ #    #   ####   #    #   #####  #    #   ####
+ ##  ##  #    #  ##   #     #    #    #  #
+ # ## #  #    #  # #  #     #    ######   ####
+ #    #  #    #  #  # #     #    #    #       #
+ #    #  #    #  #   ##     #    #    #  #    #
+ #    #   ####   #    #     #    #    #   ####
+
+
+   ##     ####    ####
+  #  #   #    #  #    #
+ #    #  #       #    #
+ ######  #  ###  #    #
+ #    #  #    #  #    #
+ #    #   ####    ####
+
+#        #####   #####  #     # ######
+#    #  #     # #     # ##   ## #     #
+#    #  #             # # # # # #     #
+####### ######   #####  #  #  # ######
+     #  #     #       # #     # #     #
+     #  #     # #     # #     # #     #
+     #   #####   #####  #     # ######
+
++ sudo docker tag reddy/webapp 7777s/wepapp:49
++ sudo docker tag reddy/webapp 7777s/wepapp:latest
++ sudo docker push 7777s/wepapp:49
+The push refers to repository [docker.io/7777s/wepapp]
+29aae6d016ed: Preparing
+f24d8b358bb1: Preparing
+c8bcc49b9925: Preparing
+f0e1731fd286: Preparing
+2b6c38ff3137: Preparing
+d38f3d5a39fb: Preparing
+fe60061c6c4e: Preparing
+7d63f8777ebf: Preparing
+1b958b53b256: Preparing
+2c719774c1e1: Preparing
+ec62f19bb3aa: Preparing
+f94641f1fe1f: Preparing
+fe60061c6c4e: Waiting
+7d63f8777ebf: Waiting
+1b958b53b256: Waiting
+2c719774c1e1: Waiting
+ec62f19bb3aa: Waiting
+f94641f1fe1f: Waiting
+d38f3d5a39fb: Waiting
+c8bcc49b9925: Layer already exists
+f0e1731fd286: Layer already exists
+f24d8b358bb1: Layer already exists
+2b6c38ff3137: Layer already exists
+d38f3d5a39fb: Layer already exists
+fe60061c6c4e: Layer already exists
+7d63f8777ebf: Layer already exists
+1b958b53b256: Layer already exists
+2c719774c1e1: Layer already exists
+ec62f19bb3aa: Layer already exists
+f94641f1fe1f: Layer already exists
+29aae6d016ed: Pushed
+49: digest: sha256:536d1887d58a45600b615389cd56127ef4372ef27b898bcb7c44e8f49803eb42 size: 2834
++ sudo docker push 7777s/wepapp:latest
+The push refers to repository [docker.io/7777s/wepapp]
+29aae6d016ed: Preparing
+f24d8b358bb1: Preparing
+c8bcc49b9925: Preparing
+f0e1731fd286: Preparing
+2b6c38ff3137: Preparing
+d38f3d5a39fb: Preparing
+fe60061c6c4e: Preparing
+7d63f8777ebf: Preparing
+1b958b53b256: Preparing
+2c719774c1e1: Preparing
+ec62f19bb3aa: Preparing
+f94641f1fe1f: Preparing
+d38f3d5a39fb: Waiting
+fe60061c6c4e: Waiting
+7d63f8777ebf: Waiting
+1b958b53b256: Waiting
+2c719774c1e1: Waiting
+ec62f19bb3aa: Waiting
+f94641f1fe1f: Waiting
+29aae6d016ed: Layer already exists
+f24d8b358bb1: Layer already exists
+f0e1731fd286: Layer already exists
+2b6c38ff3137: Layer already exists
+c8bcc49b9925: Layer already exists
+fe60061c6c4e: Layer already exists
+d38f3d5a39fb: Layer already exists
+1b958b53b256: Layer already exists
+7d63f8777ebf: Layer already exists
+2c719774c1e1: Layer already exists
+ec62f19bb3aa: Layer already exists
+f94641f1fe1f: Layer already exists
+latest: digest: sha256:536d1887d58a45600b615389cd56127ef4372ef27b898bcb7c44e8f49803eb42 size: 2834
+[SSH] script:
+
+#!/bin/sh
+docker_ps=`docker ps -a -q`
+docker_image=`docker images -a -q`
+if [ ! -z $docker_image ];
+then
+sudo docker stop $docker_ps
+sudo docker rmi -f $docker_image
+sudo docker rm -f $docker_ps
+sudo docker run -d --name seena -p 9090:8080  7777s/wepapp:latest 
+
+  
+  
+elif [ -z $docker_image ];
+then
+  echo "docker containers are not removed"
+fi
+
+[SSH] executing...
+Unable to find image '7777s/wepapp:latest' locally
+e90819aee6b9
+Untagged: 7777s/wepapp:latest
+Untagged: 7777s/wepapp@sha256:3c0f47eea7b7692a213c6319d701b3dc5d07a77be9b3e44fcb9d430af5887763
+Deleted: sha256:44502240010e987725a4398c47083d370a8f23d02544045183e9f842c691c7a2
+e90819aee6b9
+latest: Pulling from 7777s/wepapp
+c5e155d5a1d1: Pulling fs layer
+221d80d00ae9: Pulling fs layer
+4250b3117dca: Pulling fs layer
+d1370422ab93: Pulling fs layer
+deb6b03222ca: Pulling fs layer
+9cdea8d70cc3: Pulling fs layer
+968505be14db: Pulling fs layer
+04b5c270ac81: Pulling fs layer
+301d76fcab1f: Pulling fs layer
+57ca7a0b9e79: Pulling fs layer
+3c1d6826d7a3: Pulling fs layer
+0fea63de4e3d: Pulling fs layer
+d1370422ab93: Waiting
+deb6b03222ca: Waiting
+9cdea8d70cc3: Waiting
+968505be14db: Waiting
+04b5c270ac81: Waiting
+301d76fcab1f: Waiting
+57ca7a0b9e79: Waiting
+3c1d6826d7a3: Waiting
+0fea63de4e3d: Waiting
+4250b3117dca: Verifying Checksum
+4250b3117dca: Download complete
+221d80d00ae9: Verifying Checksum
+221d80d00ae9: Download complete
+c5e155d5a1d1: Verifying Checksum
+c5e155d5a1d1: Download complete
+d1370422ab93: Verifying Checksum
+d1370422ab93: Download complete
+deb6b03222ca: Verifying Checksum
+deb6b03222ca: Download complete
+9cdea8d70cc3: Verifying Checksum
+9cdea8d70cc3: Download complete
+04b5c270ac81: Verifying Checksum
+04b5c270ac81: Download complete
+c5e155d5a1d1: Pull complete
+301d76fcab1f: Verifying Checksum
+301d76fcab1f: Download complete
+221d80d00ae9: Pull complete
+4250b3117dca: Pull complete
+57ca7a0b9e79: Verifying Checksum
+57ca7a0b9e79: Download complete
+3c1d6826d7a3: Verifying Checksum
+3c1d6826d7a3: Download complete
+d1370422ab93: Pull complete
+968505be14db: Verifying Checksum
+968505be14db: Download complete
+deb6b03222ca: Pull complete
+9cdea8d70cc3: Pull complete
+0fea63de4e3d: Verifying Checksum
+0fea63de4e3d: Download complete
+968505be14db: Pull complete
+04b5c270ac81: Pull complete
+301d76fcab1f: Pull complete
+57ca7a0b9e79: Pull complete
+3c1d6826d7a3: Pull complete
+0fea63de4e3d: Pull complete
+Digest: sha256:536d1887d58a45600b615389cd56127ef4372ef27b898bcb7c44e8f49803eb42
+Status: Downloaded newer image for 7777s/wepapp:latest
+c6f1c67acc3292de6d9c38cd77d04e911f7e0657abaf06385f1ccbbae74ccc22
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

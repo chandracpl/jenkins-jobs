@@ -1,0 +1,89 @@
+Started by user [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/nexus-deploy06012020
+using credential f1287418-70a2-4b1a-932c-e06e69206c52
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/chandracpl/career.git # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/career.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/career.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision dc5304d51520be64a9f3f3ba98ae27dcc1fd99a5 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f dc5304d51520be64a9f3f3ba98ae27dcc1fd99a5 # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk dc5304d51520be64a9f3f3ba98ae27dcc1fd99a5 # timeout=10
+[nexus-deploy06012020] $ mvn clean package deploy
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building studentapp 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ studentapp ---
+[INFO] Deleting /var/lib/jenkins/workspace/nexus-deploy06012020/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy06012020/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ studentapp ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/nexus-deploy06012020/target/classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy06012020/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ studentapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ studentapp ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ studentapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [studentapp] in [/var/lib/jenkins/workspace/nexus-deploy06012020/target/studentapp-2.5-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/nexus-deploy06012020/WebContent]
+[INFO] Webapp assembled in [41 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/nexus-deploy06012020/target/studentapp-2.5-SNAPSHOT.war
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy06012020/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ studentapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy06012020/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ studentapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ studentapp ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ studentapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [studentapp] in [/var/lib/jenkins/workspace/nexus-deploy06012020/target/studentapp-2.5-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/nexus-deploy06012020/WebContent]
+[INFO] Webapp assembled in [6 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/nexus-deploy06012020/target/studentapp-2.5-SNAPSHOT.war
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ studentapp ---
+[INFO] Installing /var/lib/jenkins/workspace/nexus-deploy06012020/target/studentapp-2.5-SNAPSHOT.war to /var/lib/jenkins/.m2/repository/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-SNAPSHOT.war
+[INFO] Installing /var/lib/jenkins/workspace/nexus-deploy06012020/pom.xml to /var/lib/jenkins/.m2/repository/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-SNAPSHOT.pom
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ studentapp ---
+Downloading: http://52.221.208.92:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml
+Build was aborted
+Aborted by [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Finished: ABORTED

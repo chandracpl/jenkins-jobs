@@ -1,0 +1,79 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>branch</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/chandracpl/career.git</url>
+        <credentialsId>f1287418-70a2-4b1a-932c-e06e69206c52</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>${branch}</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean package deploy</targets>
+      <mavenName>(Default)</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>ubuntu@18.136.208.107:22</siteName>
+      <command>#!/bin/sh
+file=/opt/tomcat/webapps/webapp.war 
+file2=/opt/tomcat/webapps/studentapp-2.5-20200106.170252-4.war
+if [ -e $file -o -e $file2 ];
+then
+  sudo rm -rf $file
+  sudo rm -rf $file2
+  cd /opt/tomcat/webapps/
+  wget 	http://54.251.189.172:8081/repository/flipkart-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200109.174339-1.war
+  banner &quot;Success&quot;
+  
+  
+elif [ ! -e $file ];
+then
+  echo &quot;file doesn&apos;t exist&quot;
+  cd /opt/tomcat/webapps/
+  wget 	http://54.251.189.172:8081/repository/flipkart-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200109.174339-1.war
+fi
+
+
+</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

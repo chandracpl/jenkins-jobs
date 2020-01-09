@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@4.0.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/chandracpl/Sample-War.git</url>
+        <credentialsId>9b7eeebf-2fe3-4788-a4ab-432188ca4fe6</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Maven>
+      <targets>clean package</targets>
+      <mavenName>3.6.3</mavenName>
+      <usePrivateRepository>false</usePrivateRepository>
+      <settings class="jenkins.mvn.DefaultSettingsProvider"/>
+      <globalSettings class="jenkins.mvn.DefaultGlobalSettingsProvider"/>
+      <injectBuildVariables>false</injectBuildVariables>
+    </hudson.tasks.Maven>
+    <hudson.tasks.Shell>
+      <command>sudo docker build -t reddy/webapp .
+
+sudo banner `docker images` 
+
+sudo docker tag reddy/webapp 7777s/wepapp:$BUILD_NUMBER
+sudo docker tag reddy/webapp 7777s/wepapp:latest
+sudo docker push 7777s/wepapp:$BUILD_NUMBER
+sudo docker push 7777s/wepapp:latest
+</command>
+    </hudson.tasks.Shell>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>ubuntu@18.141.9.16:22</siteName>
+      <command>#!/bin/sh
+docker_ps=`docker ps -a -q`
+docker_image=`docker images -a -q`
+if [ ! -z $docker_image ];
+then
+sudo docker stop $docker_ps
+sudo docker rmi -f $docker_image
+sudo docker rm -f $docker_ps
+sudo docker run -d --name seena -p 9090:8080  7777s/wepapp:latest 
+
+  
+  
+elif [ -z $docker_image ];
+then
+  echo &quot;docker containers are not removed&quot;
+fi</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

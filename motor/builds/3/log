@@ -1,0 +1,37 @@
+Started by user [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/motor
+using credential 9b7eeebf-2fe3-4788-a4ab-432188ca4fe6
+Cloning the remote Git repository
+Cloning repository https://github.com/chandracpl/Sample-War.git
+ > git init /var/lib/jenkins/workspace/motor # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/Sample-War.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/Sample-War.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/chandracpl/Sample-War.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/chandracpl/Sample-War.git # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/Sample-War.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/Sample-War.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c2234858c568204d26d2fcb4c3d61cf9a3ac3b21 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c2234858c568204d26d2fcb4c3d61cf9a3ac3b21 # timeout=10
+Commit message: "Update index.jsp"
+First time build. Skipping changelog.
+[SSH] script:
+
+sudo rm-rf /opt/tomcat/webapps/webapp
+
+sudo rm -rf /opt/tomcat/webapps/webapp.war
+
+[SSH] executing...
+sudo: rm-rf: command not found
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

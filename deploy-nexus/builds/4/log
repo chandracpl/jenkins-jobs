@@ -1,0 +1,146 @@
+Started by user [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/deploy-nexus
+using credential 9b7eeebf-2fe3-4788-a4ab-432188ca4fe6
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/chandracpl/career.git # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/career.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/career.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a5fc1f5e3c5146c0c183be483d63dd7c6286a323 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a5fc1f5e3c5146c0c183be483d63dd7c6286a323 # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk a5fc1f5e3c5146c0c183be483d63dd7c6286a323 # timeout=10
+[deploy-nexus] $ mvn clean package deploy
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building studentapp 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.pom
+3/5 KB   5/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.pom (5 KB at 4.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/2.17/surefire-2.17.pom (17 KB at 32.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.jar
+3/34 KB    5/34 KB   8/34 KB   11/34 KB   13/34 KB   16/34 KB   19/34 KB   21/34 KB   24/34 KB   27/34 KB   29/34 KB   32/34 KB   34/34 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.17/maven-surefire-plugin-2.17.jar (34 KB at 64.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom
+3/7 KB     5/7 KB   7/7 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.pom (7 KB at 18.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
+3/10 KB   5/10 KB   8/10 KB   10/10 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom (10 KB at 27.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar
+3/33 KB    5/33 KB   8/33 KB   11/33 KB   13/33 KB   16/33 KB   19/33 KB   21/33 KB   24/33 KB   27/33 KB   29/33 KB   32/33 KB   33/33 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.5.2/maven-install-plugin-2.5.2.jar (33 KB at 92.9 KB/sec)
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ studentapp ---
+[INFO] Deleting /var/lib/jenkins/workspace/deploy-nexus/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/deploy-nexus/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ studentapp ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/deploy-nexus/target/classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/deploy-nexus/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ studentapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ studentapp ---
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom
+3/6 KB     5/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.pom (6 KB at 17.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom
+2/2 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.pom (2 KB at 4.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom
+3/17 KB   5/17 KB   8/17 KB   11/17 KB   13/17 KB   16/17 KB   17/17 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.2/maven-plugin-tools-3.2.pom (17 KB at 46.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.pom
+3/3 KB     3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.pom (3 KB at 6.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom
+3/3 KB   3/3 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.pom (3 KB at 8.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar
+3/260 KB   5/260 KB   8/260 KB   11/260 KB   13/260 KB   16/260 KB   19/260 KB   21/260 KB   24/260 KB   27/260 KB   29/260 KB   32/260 KB   36/260 KB   40/260 KB   44/260 KB   48/260 KB   52/260 KB   56/260 KB   60/260 KB   64/260 KB   68/260 KB   72/260 KB   76/260 KB   80/260 KB   84/260 KB   88/260 KB   92/260 KB   96/260 KB   100/260 KB   104/260 KB   108/260 KB   112/260 KB   116/260 KB   120/260 KB   124/260 KB   128/260 KB   132/260 KB   136/260 KB   140/260 KB   144/260 KB   148/260 KB   152/260 KB   156/260 KB   160/260 KB   164/260 KB   168/260 KB   172/260 KB   176/260 KB   180/260 KB   184/260 KB   188/260 KB   192/260 KB   196/260 KB   200/260 KB   204/260 KB   208/260 KB   212/260 KB   216/260 KB   220/260 KB   224/260 KB   228/260 KB   232/260 KB   236/260 KB   240/260 KB   244/260 KB   248/260 KB   252/260 KB   256/260 KB   260/260 KB   3/144 KB   260/260 KB   5/144 KB   260/260 KB   8/144 KB   260/260 KB   11/144 KB   260/260 KB   13/144 KB   260/260 KB   13/144 KB   3/39 KB   260/260 KB   13/144 KB   5/39 KB   260/260 KB   13/144 KB   5/39 KB   3/15 KB   260/260 KB   13/144 KB   8/39 KB   3/15 KB   260/260 KB   13/144 KB   8/39 KB   5/15 KB   260/260 KB   13/144 KB   11/39 KB   5/15 KB   260/260 KB   13/144 KB   13/39 KB   8/15 KB   260/260 KB   13/144 KB   13/39 KB   8/15 KB   260/260 KB   13/144 KB   13/39 KB   11/15 KB   260/260 KB   13/144 KB   13/39 KB   13/15 KB   260/260 KB                                                  16/144 KB   13/39 KB   13/15 KB                19/144 KB   13/39 KB   13/15 KB   21/144 KB   13/39 KB   13/15 KB   24/144 KB   13/39 KB   13/15 KB   27/144 KB   13/39 KB   13/15 KB   29/144 KB   13/39 KB   13/15 KB   32/144 KB   13/39 KB   13/15 KB   Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar (260 KB at 374.0 KB/sec)
+32/144 KB   16/39 KB   13/15 KB   32/144 KB   19/39 KB   13/15 KB   32/144 KB   21/39 KB   13/15 KB   32/144 KB   24/39 KB   13/15 KB   32/144 KB   27/39 KB   13/15 KB   32/144 KB   29/39 KB   13/15 KB   32/144 KB   32/39 KB   13/15 KB   32/144 KB   35/39 KB   13/15 KB   32/144 KB   37/39 KB   13/15 KB   32/144 KB   39/39 KB   13/15 KB   32/144 KB   39/39 KB   15/15 KB   36/144 KB   39/39 KB   15/15 KB   40/144 KB   39/39 KB   15/15 KB   44/144 KB   39/39 KB   15/15 KB   48/144 KB   39/39 KB   15/15 KB   52/144 KB   39/39 KB   15/15 KB   56/144 KB   39/39 KB   15/15 KB   60/144 KB   39/39 KB   15/15 KB   64/144 KB   39/39 KB   15/15 KB   68/144 KB   39/39 KB   15/15 KB   72/144 KB   39/39 KB   15/15 KB   76/144 KB   39/39 KB   15/15 KB   80/144 KB   39/39 KB   15/15 KB   84/144 KB   39/39 KB   15/15 KB   88/144 KB   39/39 KB   15/15 KB   92/144 KB   39/39 KB   15/15 KB   96/144 KB   39/39 KB   15/15 KB                                     Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar (15 KB at 17.0 KB/sec)
+                                  Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar (39 KB at 44.3 KB/sec)
+100/144 KB                        104/144 KB   108/144 KB   112/144 KB   116/144 KB   120/144 KB   124/144 KB   128/144 KB   132/144 KB   136/144 KB   140/144 KB   144/144 KB   144/144 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar (144 KB at 119.6 KB/sec)
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ studentapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [studentapp] in [/var/lib/jenkins/workspace/deploy-nexus/target/studentapp-2.5-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/deploy-nexus/WebContent]
+[INFO] Webapp assembled in [32 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/deploy-nexus/target/studentapp-2.5-SNAPSHOT.war
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/deploy-nexus/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ studentapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/deploy-nexus/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ studentapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ studentapp ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ studentapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [studentapp] in [/var/lib/jenkins/workspace/deploy-nexus/target/studentapp-2.5-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/deploy-nexus/WebContent]
+[INFO] Webapp assembled in [4 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/deploy-nexus/target/studentapp-2.5-SNAPSHOT.war
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ studentapp ---
+Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom
+4/11 KB      8/11 KB   11/11 KB              Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.pom (11 KB at 31.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom
+4/4 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.pom (4 KB at 11.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom
+3/4 KB   4/4 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.pom (4 KB at 9.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar
+3/228 KB   5/228 KB   8/228 KB   11/228 KB   13/228 KB   16/228 KB   19/228 KB   21/228 KB   24/228 KB   27/228 KB   29/228 KB   32/228 KB   36/228 KB   40/228 KB   44/228 KB   48/228 KB   52/228 KB   56/228 KB   60/228 KB   64/228 KB   68/228 KB   72/228 KB   76/228 KB   80/228 KB   84/228 KB   88/228 KB   92/228 KB   96/228 KB   100/228 KB   104/228 KB   108/228 KB   112/228 KB   116/228 KB   120/228 KB   124/228 KB   128/228 KB   128/228 KB   3/152 KB   128/228 KB   5/152 KB   128/228 KB   8/152 KB   128/228 KB   11/152 KB   128/228 KB   13/152 KB   128/228 KB   16/152 KB   128/228 KB   19/152 KB   128/228 KB   21/152 KB   128/228 KB   24/152 KB   128/228 KB   27/152 KB   128/228 KB   29/152 KB   128/228 KB   32/152 KB   128/228 KB   36/152 KB   128/228 KB   40/152 KB   128/228 KB   44/152 KB   128/228 KB   48/152 KB   128/228 KB   3/234 KB   48/152 KB   128/228 KB   5/234 KB   48/152 KB   128/228 KB   8/234 KB   48/152 KB   128/228 KB   11/234 KB   48/152 KB   128/228 KB   13/234 KB   48/152 KB   128/228 KB   16/234 KB   48/152 KB   128/228 KB   19/234 KB   48/152 KB   128/228 KB   21/234 KB   48/152 KB   128/228 KB   24/234 KB   48/152 KB   128/228 KB   27/234 KB   48/152 KB   132/228 KB   27/234 KB   48/152 KB   136/228 KB   27/234 KB   48/152 KB   140/228 KB   27/234 KB   48/152 KB   144/228 KB   27/234 KB   48/152 KB   148/228 KB   27/234 KB   48/152 KB   152/228 KB   27/234 KB   48/152 KB   156/228 KB   27/234 KB   48/152 KB   160/228 KB   27/234 KB   48/152 KB   164/228 KB   27/234 KB   48/152 KB   168/228 KB   27/234 KB   48/152 KB   172/228 KB   27/234 KB   48/152 KB   176/228 KB   27/234 KB   48/152 KB   180/228 KB   27/234 KB   48/152 KB   184/228 KB   27/234 KB   48/152 KB   188/228 KB   27/234 KB   48/152 KB   192/228 KB   27/234 KB   48/152 KB   196/228 KB   27/234 KB   48/152 KB   200/228 KB   27/234 KB   48/152 KB   204/228 KB   27/234 KB   48/152 KB   208/228 KB   27/234 KB   48/152 KB   212/228 KB   27/234 KB   48/152 KB   216/228 KB   27/234 KB   48/152 KB   220/228 KB   27/234 KB   48/152 KB   224/228 KB   27/234 KB   48/152 KB   228/228 KB   27/234 KB   48/152 KB   228/228 KB   27/234 KB   52/152 KB   228/228 KB   27/234 KB   56/152 KB   228/228 KB   27/234 KB   60/152 KB   228/228 KB   27/234 KB   64/152 KB   228/228 KB   27/234 KB   68/152 KB   228/228 KB   27/234 KB   72/152 KB   228/228 KB   27/234 KB   76/152 KB   228/228 KB   27/234 KB   80/152 KB   228/228 KB   27/234 KB   84/152 KB   228/228 KB   27/234 KB   88/152 KB   228/228 KB   27/234 KB   92/152 KB   228/228 KB   27/234 KB   96/152 KB   228/228 KB   29/234 KB   96/152 KB   228/228 KB   32/234 KB   96/152 KB   228/228 KB   36/234 KB   96/152 KB   228/228 KB   40/234 KB   96/152 KB   228/228 KB   44/234 KB   96/152 KB   228/228 KB   48/234 KB   96/152 KB   228/228 KB   52/234 KB   96/152 KB   228/228 KB   56/234 KB   96/152 KB   228/228 KB   60/234 KB   96/152 KB   228/228 KB   64/234 KB   96/152 KB   228/228 KB   68/234 KB   96/152 KB   228/228 KB   72/234 KB   96/152 KB   228/228 KB   76/234 KB   96/152 KB   228/228 KB   80/234 KB   96/152 KB                                        Downloaded: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.6/commons-codec-1.6.jar (228 KB at 438.8 KB/sec)
+80/234 KB   100/152 KB               80/234 KB   104/152 KB   80/234 KB   108/152 KB   80/234 KB   112/152 KB   80/234 KB   116/152 KB   80/234 KB   120/152 KB   80/234 KB   124/152 KB   80/234 KB   128/152 KB   80/234 KB   132/152 KB   80/234 KB   136/152 KB   80/234 KB   140/152 KB   80/234 KB   144/152 KB   80/234 KB   148/152 KB   80/234 KB   152/152 KB   80/234 KB   152/152 KB   84/234 KB   152/152 KB   88/234 KB   152/152 KB   92/234 KB   152/152 KB   96/234 KB   152/152 KB   100/234 KB   152/152 KB   104/234 KB   152/152 KB   108/234 KB   152/152 KB   112/234 KB   152/152 KB   116/234 KB   152/152 KB   120/234 KB   152/152 KB   124/234 KB   152/152 KB   128/234 KB   152/152 KB   132/234 KB   152/152 KB   136/234 KB   152/152 KB   140/234 KB   152/152 KB   144/234 KB   152/152 KB   148/234 KB   152/152 KB   152/234 KB   152/152 KB   156/234 KB   152/152 KB   160/234 KB   152/152 KB   164/234 KB   152/152 KB   168/234 KB   152/152 KB   172/234 KB   152/152 KB   176/234 KB   152/152 KB   180/234 KB   152/152 KB   184/234 KB   152/152 KB   188/234 KB   152/152 KB   192/234 KB   152/152 KB                             Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/0.4/maven-shared-utils-0.4.jar (152 KB at 218.4 KB/sec)
+196/234 KB                200/234 KB   204/234 KB   208/234 KB   212/234 KB   216/234 KB   220/234 KB   224/234 KB   228/234 KB   232/234 KB   234/234 KB                Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.15/plexus-utils-3.0.15.jar (234 KB at 261.3 KB/sec)
+[INFO] Installing /var/lib/jenkins/workspace/deploy-nexus/target/studentapp-2.5-SNAPSHOT.war to /var/lib/jenkins/.m2/repository/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-SNAPSHOT.war
+[INFO] Installing /var/lib/jenkins/workspace/deploy-nexus/pom.xml to /var/lib/jenkins/.m2/repository/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-SNAPSHOT.pom
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ studentapp ---
+Downloading: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml
+             Uploading: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200102.150947-1.war
+2/88 KB      4/88 KB   6/88 KB   8/88 KB   10/88 KB   12/88 KB   14/88 KB   16/88 KB   18/88 KB   20/88 KB   22/88 KB   24/88 KB   26/88 KB   28/88 KB   30/88 KB   32/88 KB   34/88 KB   36/88 KB   38/88 KB   40/88 KB   42/88 KB   44/88 KB   46/88 KB   48/88 KB   50/88 KB   52/88 KB   54/88 KB   56/88 KB   58/88 KB   60/88 KB   62/88 KB   64/88 KB   66/88 KB   68/88 KB   70/88 KB   72/88 KB   74/88 KB   76/88 KB   78/88 KB   80/88 KB   82/88 KB   84/88 KB   86/88 KB   88/88 KB              Uploaded: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200102.150947-1.war (88 KB at 474.7 KB/sec)
+Uploading: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200102.150947-1.pom
+2/2 KB              Uploaded: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200102.150947-1.pom (2 KB at 12.6 KB/sec)
+Downloading: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/maven-metadata.xml
+         Uploading: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml
+763/763 B               Uploaded: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml (763 B at 15.5 KB/sec)
+Uploading: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/maven-metadata.xml
+277/277 B               Uploaded: http://54.179.157.97:8081/repository/seena-snap/com/jdevs/studentapp/maven-metadata.xml (277 B at 7.1 KB/sec)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11.022 s
+[INFO] Finished at: 2020-01-02T15:09:48+00:00
+[INFO] Final Memory: 23M/255M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

@@ -1,0 +1,180 @@
+Started by user [8mha:////4LE8PeyZIqlcxi2zIUx7UbujjNYcmHBWNCgHtW9F0SkGAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/nexus-deploy070120201058
+using credential f1287418-70a2-4b1a-932c-e06e69206c52
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/chandracpl/career.git # timeout=10
+Fetching upstream changes from https://github.com/chandracpl/career.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/chandracpl/career.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+Checking out Revision 90dd20a2de493668106181ddd0335cdb4f2f786f (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 90dd20a2de493668106181ddd0335cdb4f2f786f # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 90dd20a2de493668106181ddd0335cdb4f2f786f # timeout=10
+[nexus-deploy070120201058] $ mvn clean package deploy
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building studentapp 2.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ studentapp ---
+[INFO] Deleting /var/lib/jenkins/workspace/nexus-deploy070120201058/target
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy070120201058/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ studentapp ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 7 source files to /var/lib/jenkins/workspace/nexus-deploy070120201058/target/classes
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy070120201058/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ studentapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ studentapp ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ studentapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [studentapp] in [/var/lib/jenkins/workspace/nexus-deploy070120201058/target/studentapp-2.5-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/nexus-deploy070120201058/WebContent]
+[INFO] Webapp assembled in [40 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/nexus-deploy070120201058/target/studentapp-2.5-SNAPSHOT.war
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy070120201058/src/main/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ studentapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ studentapp ---
+[8mha:////4PMW9VZ+3kW8wLLiZ8+CZEmH8JRAyGXBQv/dvoMW/3CIAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/nexus-deploy070120201058/src/test/resources
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ studentapp ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ studentapp ---
+[INFO] No tests to run.
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ studentapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [studentapp] in [/var/lib/jenkins/workspace/nexus-deploy070120201058/target/studentapp-2.5-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/nexus-deploy070120201058/WebContent]
+[INFO] Webapp assembled in [7 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/nexus-deploy070120201058/target/studentapp-2.5-SNAPSHOT.war
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ studentapp ---
+[INFO] Installing /var/lib/jenkins/workspace/nexus-deploy070120201058/target/studentapp-2.5-SNAPSHOT.war to /var/lib/jenkins/.m2/repository/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-SNAPSHOT.war
+[INFO] Installing /var/lib/jenkins/workspace/nexus-deploy070120201058/pom.xml to /var/lib/jenkins/.m2/repository/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-SNAPSHOT.pom
+[INFO] 
+[8mha:////4O6fMVeq+OgEe/hxb75TbYMJmYgL65QbQsbznKEv4i98AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ studentapp ---
+Downloading: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml
+763/763 B               Downloaded: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml (763 B at 8.5 KB/sec)
+Uploading: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173328-2.war
+2/88 KB     4/88 KB   6/88 KB   8/88 KB   10/88 KB   12/88 KB   14/88 KB   16/88 KB   18/88 KB   20/88 KB   22/88 KB   24/88 KB   26/88 KB   28/88 KB   30/88 KB   32/88 KB   34/88 KB   36/88 KB   38/88 KB   40/88 KB   42/88 KB   44/88 KB   46/88 KB   48/88 KB   50/88 KB   52/88 KB   54/88 KB   56/88 KB   58/88 KB   60/88 KB   62/88 KB   64/88 KB   66/88 KB   68/88 KB   70/88 KB   72/88 KB   74/88 KB   76/88 KB   78/88 KB   80/88 KB   82/88 KB   84/88 KB   86/88 KB   88/88 KB              Uploaded: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173328-2.war (88 KB at 450.2 KB/sec)
+Uploading: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173328-2.pom
+2/2 KB              Uploaded: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173328-2.pom (2 KB at 26.8 KB/sec)
+Downloading: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/maven-metadata.xml
+277/277 B               Downloaded: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/maven-metadata.xml (277 B at 15.9 KB/sec)
+Uploading: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml
+763/763 B               Uploaded: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/maven-metadata.xml (763 B at 18.2 KB/sec)
+Uploading: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/maven-metadata.xml
+277/277 B               Uploaded: http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/maven-metadata.xml (277 B at 3.2 KB/sec)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.088 s
+[INFO] Finished at: 2020-01-07T17:33:28+00:00
+[INFO] Final Memory: 25M/298M
+[INFO] ------------------------------------------------------------------------
+[SSH] script:
+
+#!/bin/sh
+file=/opt/tomcat/webapps/webapp.war 
+file2=/opt/tomcat/webapps/studentapp-2.5-20200106.170252-4.war
+if [ -e $file -o -e $file2 ];
+then
+  sudo rm -rf $file
+  sudo rm -rf $file2
+  cd /opt/tomcat/webapps/
+  wget 	http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173029-1.war
+
+  banner "Success"
+  
+  
+elif [ ! -e $file ];
+then
+  echo "file doesn't exist"
+  cd /opt/tomcat/webapps/
+  wget 	http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173029-1.war
+fi
+
+
+#!/bin/sh#!/bin/sh
+file=/opt/tomcat/webapps/webapp.war 
+file2=/opt/tomcat/webapps/studentapp-2.5-20200106.170252-4.war
+if [ -e $file -o -e $file2 ];
+then
+  sudo rm -rf $file
+  sudo rm -rf $file2
+  cd /opt/tomcat/webapps/
+  wget 	http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173029-1.war
+
+  banner "Success"
+  
+  
+elif [ ! -e $file ];
+then
+  echo "file doesn't exist"
+  cd /opt/tomcat/webapps/
+  wget 	http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173029-1.war
+fi
+
+
+
+
+[SSH] executing...
+--2020-01-07 17:33:29--  http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173029-1.war
+Connecting to 3.0.98.90:8081... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 89443 (87K) [application/java-archive]
+Saving to: ‘studentapp-2.5-20200107.173029-1.war’
+
+     0K .......... .......... .......... .......... .......... 57% 74.8M 0s
+    50K .......... .......... .......... .......              100% 62.8M=0.001s
+
+2020-01-07 17:33:29 (69.2 MB/s) - ‘studentapp-2.5-20200107.173029-1.war’ saved [89443/89443]
+
+--2020-01-07 17:33:29--  http://3.0.98.90:8081/repository/chandra-snap/com/jdevs/studentapp/2.5-SNAPSHOT/studentapp-2.5-20200107.173029-1.war
+Connecting to 3.0.98.90:8081... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 89443 (87K) [application/java-archive]
+Saving to: ‘studentapp-2.5-20200107.173029-1.war.1’
+
+     0K .......... .......... .......... .......... .......... 57% 81.0M 0s
+    50K .......... .......... .......... .......              100% 85.9M=0.001s
+
+2020-01-07 17:33:29 (83.0 MB/s) - ‘studentapp-2.5-20200107.173029-1.war.1’ saved [89443/89443]
+
+file doesn't exist
+file doesn't exist
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS
